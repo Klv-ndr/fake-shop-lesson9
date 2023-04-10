@@ -12,16 +12,8 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-.slider {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    height: 400px;
-    border: 1px solid black;
-    text-align: center;
-}
+
+
 [class*="col-"] {
     padding-left: 15px;
     padding-right: 15px;
@@ -33,6 +25,7 @@ body {
 .col-3 {
     max-width: 25%;
     flex: 0 0 25%;
+    margin: 5px;
 }
 .col-6 {
     max-width: 50%;
@@ -41,6 +34,7 @@ body {
 .col-9 {
     max-width: 75%;
     flex: 0 0 75%;
+    margin: 5px;
 }
 .col-12 {
     max-width: 100%;
@@ -150,22 +144,129 @@ input {
 .content {
     display: flex;
     flex-wrap: wrap;
+
 }
    
 .column {
     display: flex;
     height: 850px;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid white;
 }
 .laptop {
+    
     height: 135px;
     width: 870px;
-    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid white;
 }
 .device {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     height: 680px;
-    background-color: rgba(255, 255, 255, 0.25);
+    width: 300px;
+    border: 1px white solid;
     
 }
+.way{
+    margin: 10px;
+}
 
+.upmenu {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+.subchoice {
+    font-size: 48px;
+}
+.choice {
+    background-color: #2c71b8;
+    font-size: 21px;
+    border: 1px solid white;
+    
+}
+.sort {
+    border: 1px solid white;
+    
+}
+.choice:hover {
+    background-color: white;
+    color: #2c71b8;
+}
+.imgs {
+    
+    background-color: white;
+    height: 180px;
+}
+.deviceimg {
+    padding-top: 15%;
+}
+.subimg {
+    position: relative;
+    left: 125px;
+    top: -170px;
+}
+.qvdrt {
+    border: #2c71b8 1px solid;
+    padding: 2px;
+}
+.heart {
+    border: #2c71b8 1px solid;
+    padding: 3px;
+}
+.devicename {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    margin-top: -50px;
+}
+.description {
+    font-size: 21px;
+    color: white;
+    padding: 15px;
+    
+}
+.price {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.details {
+    background-color: #2c71b8;
+    color: white;
+    border: white 1px solid;
+    height: 50px;
+    width: 210px;
+    margin: 10px;
+    font-size: 21px;
+}
+.cart {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    border: none;
+    height: 50px;
+    width: 210px;
+    margin: 10px;
+    font-size: 21px;
+}
+.cart {
+    background-image: url(images/cart.png);
+    background-repeat: no-repeat;
+    background-size: 7%;
+    background-position-x: 185px;
+    background-position-y: center;
+}
+.textdescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text {
+    text-align: left;
+}
