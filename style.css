@@ -166,6 +166,7 @@ input {
     height: 680px;
     width: 300px;
     border: 1px white solid;
+    background-color: #2c71b8;
     
 }
 .way{
@@ -245,6 +246,7 @@ input {
     width: 210px;
     margin: 10px;
     font-size: 21px;
+    font-weight: bold;
 }
 .cart {
     background-color: rgba(255, 255, 255, 0.25);
@@ -254,6 +256,7 @@ input {
     width: 210px;
     margin: 10px;
     font-size: 21px;
+    font-weight: bold;
 }
 .cart {
     background-image: url(images/cart.png);
