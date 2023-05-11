@@ -153,13 +153,12 @@ body {
     margin: auto;
     background-color: #cdddee;
     border-color: #2c71b8;
-}
-input {
     background-image: url(images/search.svg);
     background-repeat: no-repeat;
     background-size: 15%;
     background-position: right center;
-  }
+}
+
 .icons {
  display: flex;
  justify-content: center;
@@ -169,6 +168,7 @@ input {
 .shop {
     display: flex;
     background-color: #2c71b8;
+    color: white;
     height: 20px;
     width: 20px;
     border-radius: 10px;
@@ -249,20 +249,45 @@ input {
 }
 .deviceimg {
     padding-top: 15%;
+    width: 103px;
+    height: 124.5px;
 }
-.subimg {
+.subimg-zoom {
     position: relative;
-    left: 95px;
-    top: -175px;
+    left: 195px;
+    top: -125px;
 }
-.zoom {
-    border: #2c71b8 1px solid;
-    padding: 2px;
+.subimg-like {
+    position: relative;
+    left: 195px;
+    top: -90px;
 }
 
+.zoom {
+    border: #2c71b8 1px solid;
+    background-image: url(images/qvdrt.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+}
 .like {
     border: #2c71b8 1px solid;
+    background-image: url(images/heart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
     padding: 3px;
+}
+.like:hover, .liked  {
+    background-color: #2c71b8 ;
+    background-image: url(images/hearhover.png);
+    cursor: pointer;
 }
 
 .devicename {
@@ -270,7 +295,7 @@ input {
     font-weight: bold;
     color: white;
     padding: 15px;
-    margin-top: -50px;
+    
 }
 .description {
     font-size: 21px;
@@ -394,4 +419,85 @@ background-color: white;
     font-size: 21px;
     font-weight: bold;
     color: #2c71b8;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.modal-block {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    padding: 15px;
+    margin: 100px auto;
+}
+
+.form-field {
+    margin: 15px 0;
+}
+.form-field input {
+    width: 100%;
+    padding: 5px;
+}
+.btn-close {
+    text-align: right;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.slick-arrow::before {
+    color: white;
+}
+.slick-dots li.slick-active button:before {
+    color: white;
+}
+
+.slider > div {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+.slider-wrap {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px white solid;
+}
+.slick-next {
+    display: block;
+    height: 100px;
+    width: 100px;
+    
+}
+.slick-next:before {
+    content: url(images/right_arrow_icon.svg);
+}
+.slick-prev{
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+.slick-prev:before {
+    content: url(images/left_arrow_icon.svg);
+}
+.slick-dots li button:before {
+    content: url(images/square_full_icon.svg);
+    position: relative;
+}
+.slick-dots li.slick-active button:before {
+   content: url(images/square_full_white_icon.svg);
 }
